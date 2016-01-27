@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     var player: Player!
     var enemy: Enemy!
+    var chestMessage: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +42,36 @@ class ViewController: UIViewController {
         } else {
             enemy = DevilWizard(startingHP: 60, attackPwr: 15)
         }
+        
+        enemyImage.hidden = false
+        enemyHpLabel.text = "\(enemy.hp) HP"
     }
 
     @IBAction func onChestTapped(sender: UIButton) {
+        chestButton.hidden = true
+        printLabel.text = chestMessage
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "generateRandomEnemy", userInfo: nil, repeats: false)
     }
 
+    @IBAction func attackTapped(sender: UIButton) {
+        if enemy.attemptAttack(player.attackPower) {
+            printLabel.text = "Attacked \(enemy.type) for \(player.attackPower) HP"
+            enemyHpLabel.text = "\(enemy.hp) HP"
+        } else {
+            printLabel.text = "Attack was unsuccessful!"
+        }
+        
+        if let loot = enemy.dropLoot() {
+            player.addItemToInventory(loot)
+            chestMessage = "\(player.name) found \(loot)"
+            chestButton.hidden = false
+        }
+        
+        if !enemy.isAlive {
+            enemyHpLabel.text = ""
+            printLabel.text = "Killed \(enemy.type)"
+            enemyImage.hidden = true
+        }
+    }
 }
 
