@@ -21,13 +21,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="aQV-hz-FY0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chest" translatesAutoresizingMaskIntoConstraints="NO" id="q8T-xL-Frj">
-                                <rect key="frame" x="406" y="374" width="128" height="145"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqI-Ej-LZp">
+                                <rect key="frame" x="412" y="383" width="119" height="134"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="5Ew-M8-u8w"/>
-                                    <constraint firstAttribute="width" constant="128" id="jtw-wR-ZtL"/>
+                                    <constraint firstAttribute="height" constant="134" id="5xD-pk-Lbh"/>
+                                    <constraint firstAttribute="width" constant="119" id="w3i-G2-apj"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="Chest"/>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ground" translatesAutoresizingMaskIntoConstraints="NO" id="Q5T-BL-gAE">
                                 <rect key="frame" x="0.0" y="514" width="410" height="86"/>
                                 <constraints>
@@ -118,7 +119,6 @@
                             <constraint firstItem="dFT-fa-8TJ" firstAttribute="centerY" secondItem="7LI-pg-Alq" secondAttribute="centerY" id="HV2-eB-Xtd"/>
                             <constraint firstItem="geG-Md-Ukl" firstAttribute="centerX" secondItem="Gxf-hg-qXT" secondAttribute="centerX" id="I6R-lB-qZv"/>
                             <constraint firstItem="Q5T-BL-gAE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jdj-r5-RQp"/>
-                            <constraint firstAttribute="trailing" secondItem="q8T-xL-Frj" secondAttribute="trailing" constant="66" id="KuA-PS-CGx"/>
                             <constraint firstItem="geG-Md-Ukl" firstAttribute="centerY" secondItem="Gxf-hg-qXT" secondAttribute="centerY" id="P68-b9-JpF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZYT-qx-hlU" secondAttribute="bottom" id="QzJ-h5-uUu"/>
                             <constraint firstItem="Gxf-hg-qXT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sdq-I0-4Ck"/>
@@ -127,14 +127,15 @@
                             <constraint firstItem="Q5T-BL-gAE" firstAttribute="top" secondItem="7LI-pg-Alq" secondAttribute="bottom" constant="131" id="YqZ-O4-A0q"/>
                             <constraint firstItem="7LI-pg-Alq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="149" id="Zul-r7-T9G"/>
                             <constraint firstItem="aQV-hz-FY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b0A-62-7Kn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jqI-Ej-LZp" secondAttribute="bottom" constant="83" id="d5w-8f-dyt"/>
                             <constraint firstItem="aQV-hz-FY0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dBW-gN-MEO"/>
                             <constraint firstAttribute="trailing" secondItem="Hgf-kj-txN" secondAttribute="trailing" constant="52" id="h2h-fv-Y8v"/>
                             <constraint firstItem="RvJ-9H-X5Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="kFC-nT-4qk"/>
                             <constraint firstItem="ZYT-qx-hlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="370" id="pfO-pj-cqv"/>
                             <constraint firstItem="Q5T-BL-gAE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qHu-P0-nUa"/>
                             <constraint firstAttribute="trailing" secondItem="Q5T-BL-gAE" secondAttribute="trailing" id="qVm-Wm-Tn8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q8T-xL-Frj" secondAttribute="bottom" constant="81" id="rY7-KE-MI8"/>
                             <constraint firstItem="Gxf-hg-qXT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tf1-Og-zW9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jqI-Ej-LZp" secondAttribute="trailing" constant="49" id="xLu-c1-a3h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q5T-BL-gAE" secondAttribute="bottom" id="zYr-VE-oiX"/>
                         </constraints>
                         <variation key="default">
@@ -146,6 +147,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enemyHpLabel" destination="dFT-fa-8TJ" id="RJg-Pi-hkj"/>
+                        <outlet property="enemyImage" destination="Hgf-kj-txN" id="Scv-5P-cZu"/>
+                        <outlet property="playerHpLabel" destination="7LI-pg-Alq" id="Bdm-lu-4j5"/>
+                        <outlet property="printLabel" destination="geG-Md-Ukl" id="ezu-dF-EMS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
