@@ -16,6 +16,7 @@
 		91547D821C58E0350024358C /* SimpleRPGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D811C58E0350024358C /* SimpleRPGUITests.swift */; };
 		91547D901C58E1DA0024358C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D8F1C58E1DA0024358C /* Character.swift */; };
 		91547D921C58E4550024358C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D911C58E4550024358C /* Player.swift */; };
+		91547D941C58E6F50024358C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D931C58E6F50024358C /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		91547D831C58E0350024358C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91547D8F1C58E1DA0024358C /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		91547D911C58E4550024358C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		91547D931C58E6F50024358C /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				91547D6D1C58E0350024358C /* Info.plist */,
 				91547D8F1C58E1DA0024358C /* Character.swift */,
 				91547D911C58E4550024358C /* Player.swift */,
+				91547D931C58E6F50024358C /* Enemy.swift */,
 			);
 			path = SimpleRPG;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91547D921C58E4550024358C /* Player.swift in Sources */,
+				91547D941C58E6F50024358C /* Enemy.swift in Sources */,
 				91547D901C58E1DA0024358C /* Character.swift in Sources */,
 				91547D641C58E0350024358C /* ViewController.swift in Sources */,
 				91547D621C58E0350024358C /* AppDelegate.swift in Sources */,
