@@ -17,6 +17,7 @@
 		91547D901C58E1DA0024358C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D8F1C58E1DA0024358C /* Character.swift */; };
 		91547D921C58E4550024358C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D911C58E4550024358C /* Player.swift */; };
 		91547D941C58E6F50024358C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D931C58E6F50024358C /* Enemy.swift */; };
+		91547D961C58E9FB0024358C /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91547D951C58E9FB0024358C /* Kimara.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		91547D8F1C58E1DA0024358C /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		91547D911C58E4550024358C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		91547D931C58E6F50024358C /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		91547D951C58E9FB0024358C /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				91547D8F1C58E1DA0024358C /* Character.swift */,
 				91547D911C58E4550024358C /* Player.swift */,
 				91547D931C58E6F50024358C /* Enemy.swift */,
+				91547D951C58E9FB0024358C /* Kimara.swift */,
 			);
 			path = SimpleRPG;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				91547D921C58E4550024358C /* Player.swift in Sources */,
 				91547D941C58E6F50024358C /* Enemy.swift in Sources */,
+				91547D961C58E9FB0024358C /* Kimara.swift in Sources */,
 				91547D901C58E1DA0024358C /* Character.swift in Sources */,
 				91547D641C58E0350024358C /* ViewController.swift in Sources */,
 				91547D621C58E0350024358C /* AppDelegate.swift in Sources */,
